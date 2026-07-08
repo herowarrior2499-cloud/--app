@@ -4,7 +4,7 @@ let currentAyah = 1;
 let saveTimer = null;
 
 async function init(){
-  const res = await fetch("data/fatiha.json");
+  const res = await fetch("fatiha.json");
   SURAH_DATA = await res.json();
   renderDots();
   renderAyah(1);
